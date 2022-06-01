@@ -4,6 +4,10 @@
   src: url('https://fonts.googleapis.com/css?family=Sofia&effect=fire');
 } 
 
+body {
+  font-family: "Sofia", sans-serif;
+}
+
 .book-cta {
   background-color: #199fd9;
   border: 1px solid #199fd9;
