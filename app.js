@@ -22,6 +22,11 @@ const getCriticalCss = () => {
   return css
 }
 
+app.get('', (req, res) => {
+  res.status(200)
+  res.end()
+})
+
 app.get('/preload', (req, res) => {
 
   const app = renderToString(<App />);
