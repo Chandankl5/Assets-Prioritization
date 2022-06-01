@@ -77,6 +77,6 @@ app.get('/next-page', (req, res) => {
   res.send(getNextPageLayout());
 })
 
-app.listen(3000 , () => {
-  console.log('listining at port 8080')
+app.listen(process.env.PORT , () => {
+  console.log('listining at port ', process.env.PORT)
 })
