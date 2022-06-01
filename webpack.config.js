@@ -30,7 +30,7 @@ const Config = () => {
     target: "web",
     mode: "development",
 		devtool: "source-map",
-    watch: true,
+    watch: false,
     module: {
       rules: loaders
     },

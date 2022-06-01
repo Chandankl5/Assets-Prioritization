@@ -28,7 +28,7 @@ const Config = () => {
     },
     target: "node",
     mode: "none",
-    watch: true,
+    watch: false,
     module: { rules: loaders },
     externals: [ nodeExternals() ],
     resolve: {
