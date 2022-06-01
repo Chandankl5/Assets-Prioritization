@@ -11,7 +11,7 @@ export const getDnsPrefetchLayout = (content, styles) => {
       ${styles}
     </style>
     ${dnsPreFetchtLinkTag}
-    <link rel='preload' as='style' href='/assets/lazy.css' />
+    <link rel='stylesheet' href='/assets/lazy.css' />
     <script src='/assets/main.js' defer></script>
   </head>
   <body>
