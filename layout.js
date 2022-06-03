@@ -101,3 +101,20 @@ export const getNextPageLayout = () => {
 </html>
 `
 }
+
+export const getDnsPrefetchFalseLayout = (content, styles) => {
+  return `<html>
+  <head>
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <style>
+      ${styles}
+    </style>
+    <link rel="stylesheet" href="/assets/lazy.css" type="text/css" onload="this.rel=stylesheet" />
+    <script src='/assets/main.js' defer></script>
+  </head>
+  <body>
+    <div id='root'>${content}</div>
+  </body>
+</html>
+`
+}

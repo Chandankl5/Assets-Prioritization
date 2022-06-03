@@ -3,7 +3,7 @@ const path = require("path");
 const React = require('react')
 const fs = require('fs');
 import { renderToString } from "react-dom/server";
-import { getDnsPrefetchLayout, getNextPageLayout, getPreConnectLayout, getPreFetchLayout, getPreLoadLayout, getPreRenderLayout } from "./layout.js";
+import { getDnsPrefetchFalseLayout, getDnsPrefetchLayout, getNextPageLayout, getPreConnectLayout, getPreFetchLayout, getPreLoadLayout, getPreRenderLayout } from "./layout.js";
 const App = require('./src/App.js').default
 
 const app = express();
@@ -75,6 +75,13 @@ app.get('/prerender', (req, res) => {
 app.get('/next-page', (req, res) => {
 
   res.send(getNextPageLayout());
+})
+
+app.get('/dns-prefetch-false', (req, res) => {
+
+  const app = renderToString(<App />);
+
+  res.send(getDnsPrefetchFalseLayout(app, getCriticalCss()));
 })
 
 app.listen(process.env.PORT , () => {
