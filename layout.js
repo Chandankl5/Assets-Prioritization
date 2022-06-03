@@ -1,4 +1,4 @@
-const dnsPreFetchtLinkTag = '<link rel="dns-prefetch" href="//fonts.googleapis.com" />'
+const dnsPreFetchtLinkTag = '<link rel="dns-prefetch" href="//unpkg.com/purecss@2.1.0/build/pure-min.css" />'
 const preConnectLinkTag = '<link rel="preconnect" href="//fonts.googleapis.com" />'
 const preFetchLinkTag = '<link rel="prefetch" href="https://www.practostatic.com/web-assets/javascripts/vendor-profile-listing.7e0813cb19ff.js" />'
 const preRenderLinkTag = '<link rel="prerender" href="/next-page" />'
@@ -45,7 +45,7 @@ export const getPreConnectLayout = (content, styles) => {
     </style>
     ${preConnectLinkTag}
     <script src='/assets/main.js' defer></script>
-    <link rel='preload' as='style' href='/assets/lazy.css' />
+    <link rel="stylesheet" href="/assets/lazy.css" type="text/css" onload="this.rel=stylesheet" />
   </head>
   <body>
     <div id='root'>${content}</div>
