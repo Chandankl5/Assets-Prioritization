@@ -44,8 +44,8 @@ export const getPreConnectLayout = (content, styles) => {
       ${styles}
     </style>
     ${preConnectLinkTag}
-    <script src='/assets/main.js' defer></script>
     <link rel="stylesheet" href="/assets/lazy.css" type="text/css" onload="this.rel=stylesheet" />
+    <script src='/assets/main.js' defer></script>
   </head>
   <body>
     <div id='root'>${content}</div>
