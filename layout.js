@@ -1,5 +1,5 @@
-const dnsPreFetchtLinkTag = '<link rel="dns-prefetch" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" />'
-const preConnectLinkTag = '<link rel="preconnect" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" />'
+const dnsPreFetchtLinkTag = '<link rel="dns-prefetch" href=""https://fonts.googleapis.com/css?family=Tangerine" />'
+const preConnectLinkTag = '<link rel="preconnect" href=""https://fonts.googleapis.com/css?family=Tangerine" />'
 const preFetchLinkTag = '<link rel="prefetch" href="https://www.practostatic.com/web-assets/javascripts/vendor-profile-listing.7e0813cb19ff.js" />'
 const preRenderLinkTag = '<link rel="prerender" href="/next-page" />'
 
@@ -111,6 +111,22 @@ export const getDnsPrefetchFalseLayout = (content, styles) => {
     </style>
     <link rel="stylesheet" href="/assets/lazy.css" type="text/css" onload="this.rel=stylesheet" />
     <script src='/assets/main.js' defer></script>
+  </head>
+  <body>
+    <div id='root'>${content}</div>
+  </body>
+</html>
+`
+}
+
+export const getPreConnectFalseLayout = (content, styles) => {
+  return `<html>
+  <head>
+    <style>
+      ${styles}
+    </style>
+    <script src='/assets/main.js' defer></script>
+    <link rel="stylesheet" href="/assets/lazy.css" type="text/css" onload="this.rel=stylesheet" />
   </head>
   <body>
     <div id='root'>${content}</div>
