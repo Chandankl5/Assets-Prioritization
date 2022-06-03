@@ -1,11 +1,11 @@
 
 @font-face {
   font-family: Sofia;
-  src: url('https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css');
+  src: url('https://fonts.googleapis.com/css?family=Tangerine');
 } 
 
 body {
-  font-family: "Sofia", sans-serif;
+  font-family: "Tangerine", sans-serif;
 }
 
 .book-cta {
