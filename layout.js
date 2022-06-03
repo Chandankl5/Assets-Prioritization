@@ -10,6 +10,7 @@ export const getDnsPrefetchLayout = (content, styles) => {
     <style>
       ${styles}
     </style>
+    ${dnsPreFetchtLinkTag}
     <script src='/assets/main.js' defer></script>
     <link rel="stylesheet" href="/assets/lazy.css" type="text/css" onload="this.rel=stylesheet" />
   </head>
@@ -39,13 +40,12 @@ export const getPreLoadLayout = (content, styles) => {
 export const getPreConnectLayout = (content, styles) => {
   return `<html>
   <head>
-    <meta http-equiv="x-dns-prefetch-control" content="on">
     <style>
       ${styles}
     </style>
     ${preConnectLinkTag}
-    <link rel='preload' as='style' href='/assets/lazy.css' />
     <script src='/assets/main.js' defer></script>
+    <link rel='preload' as='style' href='/assets/lazy.css' />
   </head>
   <body>
     <div id='root'>${content}</div>
