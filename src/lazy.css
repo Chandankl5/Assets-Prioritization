@@ -1,7 +1,7 @@
 
 @font-face {
   font-family: Sofia;
-  src: url('https://fonts.googleapis.com/css?family=Sofia&effect=fire');
+  src: url('https://unpkg.com/purecss@2.1.0/build/pure-min.css');
 } 
 
 body {
