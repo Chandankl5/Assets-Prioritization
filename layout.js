@@ -1,5 +1,5 @@
-const dnsPreFetchtLinkTag = '<link rel="dns-prefetch" href="//unpkg.com/purecss@2.1.0/build/pure-min.css" />'
-const preConnectLinkTag = '<link rel="preconnect" href="//fonts.googleapis.com" />'
+const dnsPreFetchtLinkTag = '<link rel="dns-prefetch" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" />'
+const preConnectLinkTag = '<link rel="preconnect" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" />'
 const preFetchLinkTag = '<link rel="prefetch" href="https://www.practostatic.com/web-assets/javascripts/vendor-profile-listing.7e0813cb19ff.js" />'
 const preRenderLinkTag = '<link rel="prerender" href="/next-page" />'
 
