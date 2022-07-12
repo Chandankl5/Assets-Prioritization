@@ -127,8 +127,9 @@ export const getPreConnectFalseLayout = (content, styles) => {
     <style>
       ${styles}
     </style>
-    <script src='/assets/main.js' defer></script>
     <link rel="stylesheet" href="/assets/lazy.css" type="text/css" onload="this.rel=stylesheet" />
+    <script src='https://www.practostatic.com/web-assets/javascripts/vendor-entry.b8f658d2e333.js'></script>
+    <script src='/assets/main.js' defer></script>
   </head>
   <body>
     <div id='root'>${content}</div>
