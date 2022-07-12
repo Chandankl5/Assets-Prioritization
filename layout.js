@@ -46,7 +46,7 @@ export const getPreConnectLayout = (content, styles) => {
     </style>
     ${preConnectLinkTag}
     <script src='https://www.practostatic.com/web-assets/javascripts/vendor-entry.b8f658d2e333.js'></script>
-    <script src='/assets/main.js' defer></>
+    <script src='/assets/main.js' defer></script>
   </head>
   <body>
     <div id='root'>${content}</div>
