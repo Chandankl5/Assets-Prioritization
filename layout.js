@@ -46,7 +46,7 @@ export const getPreConnectLayout = (content, styles) => {
     </style>
     ${preConnectLinkTag}
     <link rel="stylesheet" href="/assets/lazy.css" type="text/css" onload="this.rel=stylesheet" />
-    <script src='https://www.practostatic.com/web-assets/javascripts/vendor-entry.b8f658d2e333.js'></script>
+    <script src='https://www-latest.practo.com/consumer-home/assets/vendor.bundle.3dca5b4fa118.js'></script>
     <script src='/assets/main.js' defer></script>
   </head>
   <body>
@@ -128,7 +128,7 @@ export const getPreConnectFalseLayout = (content, styles) => {
       ${styles}
     </style>
     <link rel="stylesheet" href="/assets/lazy.css" type="text/css" onload="this.rel=stylesheet" />
-    <script src='https://www.practostatic.com/web-assets/javascripts/vendor-entry.b8f658d2e333.js'></script>
+    <script src='https://www-latest.practo.com/consumer-home/assets/vendor.bundle.3dca5b4fa118.js'></script>
     <script src='/assets/main.js' defer></script>
   </head>
   <body>
