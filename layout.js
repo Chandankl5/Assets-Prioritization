@@ -52,6 +52,7 @@ export const getPreConnectLayout = (content, styles) => {
     <link rel="stylesheet"  href='/assets/lazy.css'>
   </head>
   <body>
+  <div id='root'>${content}</div>
   </body>
 </html>
 `
