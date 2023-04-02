@@ -15,6 +15,9 @@ express.static(path.join(process.cwd(), 'dist')), (req, res) => res.end())
 app.use('/assets', (re, res, next) => { console.log(` css handle -> serving from ${path.join(process.cwd(), 'dist')}`) ;next() }, 
 express.static(path.join(process.cwd(), 'dist')), (req, res) => res.end())
 
+app.use('/public', (re, res, next) => { console.log(` css handle -> serving from ${path.join(process.cwd(), 'public')}`) ;next() }, 
+express.static(path.join(process.cwd(), 'public')), (req, res) => res.end())
+
 const getCriticalCss = () => {
 
   const css = fs.readFileSync('./src/App.css', {encoding:'utf8', flag:'r'})
@@ -91,6 +94,6 @@ app.get('/preconnect-false', (req, res) => {
   res.send(getPreConnectFalseLayout(app, getCriticalCss()));
 })
 
-app.listen(process.env.PORT , () => {
+app.listen(process.env.PORT || 8080 , () => {
   console.log('listining at port ', process.env.PORT)
 })
