@@ -48,7 +48,8 @@ export const getPreConnectLayout = (content, styles) => {
     <style>
       ${styles}
     </style>
-    <script src="https://andydavies.github.io/test-rel-preconnect/tests/js/large-script.js"></script>
+    ${preConnectLinkTag}
+    <script src='https://andydavies.github.io/test-rel-preconnect/tests/js/large-script.js'></script>
     <link rel="stylesheet"  href='/assets/lazy.css'>
   </head>
   <body>
