@@ -1,5 +1,5 @@
-const dnsPreFetchtLinkTag = '<link rel="dns-prefetch" href="//fonts.googleapis.com/css?family=Sofia" />'
-const preConnectLinkTag = '<link rel="preconnect" href="https://www.practostatic.com" />'
+const dnsPreFetchtLinkTag = '<link rel="dns-prefetch" href="https://fonts.googleapis.com" />'
+const preConnectLinkTag = '<link rel="preconnect"  href="https://fonts.googleapis.com" />'
 const preFetchLinkTag = '<link rel="prefetch" href="https://www.practostatic.com/web-assets/javascripts/vendor-profile-listing.7e0813cb19ff.js" />'
 const preRenderLinkTag = '<link rel="prerender" href="/next-page" />'
 
@@ -11,7 +11,7 @@ export const getDnsPrefetchLayout = (content, styles) => {
       ${styles}
     </style>
     ${dnsPreFetchtLinkTag}
-    <link rel="stylesheet" href="/assets/lazy.css" type="text/css" onload="this.rel=stylesheet" />
+    <link rel="stylesheet" href="/assets/lazy.css" type="text/css" />
   </head>
   <body>
     <div id='root'>${content}</div>
@@ -49,7 +49,7 @@ export const getPreConnectLayout = (content, styles) => {
       ${styles}
     </style>
     ${preConnectLinkTag}
-    <link rel="stylesheet" href="/assets/lazy.css" type="text/css" onload="this.rel=stylesheet" />
+    <link rel="stylesheet" href="/assets/lazy.css" type="text/css" />
   </head>
   <body>
     <div id='root'>${content}</div>
