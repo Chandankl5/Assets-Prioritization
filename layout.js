@@ -11,9 +11,7 @@ export const getDnsPrefetchLayout = (content, styles) => {
       ${styles}
     </style>
     ${dnsPreFetchtLinkTag}
-    <script src='https://www.practostatic.com/web-assets/javascripts/vendor-entry.b8f658d2e333.js'></script>
     <link rel="stylesheet" href="/assets/lazy.css" type="text/css" onload="this.rel=stylesheet" />
-    <script src='/assets/main.js' defer></script>
   </head>
   <body>
     <div id='root'>${content}</div>
@@ -28,11 +26,17 @@ export const getPreLoadLayout = (content, styles) => {
     <style>
       ${styles}
     </style>
-    <link rel='preload' as='style' href='/assets/lazy.css' />
-    <script src='/assets/main.js' defer></script>
+    <link rel='preload' as='style' href='https://www.youtube.com/s/player/ace4d669/www-player.css' />
+    <link rel='preload' as='script' href='https://www.practostatic.com/web-assets/javascripts/vendor-profile-listing.7e0813cb19ff.js' />
   </head>
   <body>
     <div id='root'>${content}</div>
+    <div id='root2'>${content}</div>
+    <div id='root3'>${content}</div>
+    <div id='root4'>${content}</div>
+    <script src='https://www.practo.com/sapphire-assets/javascripts/DoctorProfilePage.ca6a4ff71c26.js' defer></script>
+    <script src='/assets/main.js' defer></script>
+    <script src='https://www.practostatic.com/web-assets/javascripts/vendor-profile-listing.7e0813cb19ff.js' defer></script>
   </body>
 </html>
 `
@@ -46,8 +50,6 @@ export const getPreConnectLayout = (content, styles) => {
     </style>
     ${preConnectLinkTag}
     <link rel="stylesheet" href="/assets/lazy.css" type="text/css" onload="this.rel=stylesheet" />
-    <script src='https://www-latest.practo.com/consumer-home/assets/vendor.bundle.3dca5b4fa118.js'></script>
-    <script src='/assets/main.js' defer></script>
   </head>
   <body>
     <div id='root'>${content}</div>
