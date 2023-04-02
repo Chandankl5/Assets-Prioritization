@@ -1,7 +1,10 @@
 import React, { useEffect } from "react";
-import './lazy.css';
+import '../public/lazy.css';
 
 function LazyComponent() {
+
+
+  console.log('-----Executing Lazy Component---------')
 
   return (
     <>

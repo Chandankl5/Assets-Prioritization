@@ -1,0 +1,21 @@
+/* @font-face {
+  font-family: Sofia;
+  src: url("https://fonts.googleapis.com/css?family=Sofia");
+}  */
+
+@import 'https://fonts.googleapis.com/css?family=Sofia';
+
+
+.book-cta {
+  background-color: #199fd9;
+  border: 1px solid #199fd9;
+  color: white;
+  padding: 16px 12px;
+  width: 100%;
+  margin: 50px;
+}
+
+.google-font-text {
+  font-family: "Sofia", sans-serif;
+}
+
