@@ -49,7 +49,7 @@ export const getPreConnectLayout = (content, styles) => {
       ${styles}
     </style>
     ${preConnectLinkTag}
-    <script src='/assets/main.js' defer></script>
+    <script src='/assets/dynamic.js' defer></script>
     </script>
   </head>
   <body>
