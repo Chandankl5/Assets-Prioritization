@@ -1,9 +1,8 @@
-/* @font-face {
+@font-face {
   font-family: Sofia;
   src: url("https://fonts.googleapis.com/css?family=Sofia");
-}  */
-
-@import 'https://fonts.googleapis.com/css?family=Sofia';
+} 
+/* @import 'https://fonts.googleapis.com/css?family=Sofia'; */
 
 
 .book-cta {
