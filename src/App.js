@@ -53,14 +53,14 @@ function App() {
         <img src="https://www.practo.com/sapphire-assets/images/practo_care/practo_care_banner_with_celebrity.dc1aadfd844b.png" />
       </VisibilitySensor> */}
 
-      {visible && (
+      {/* {visible && ( */}
         <Dynamic
           callback={() =>
             import(/* webpackChunkName: 'lazy' */ "./LazyComponent")
           }
           fallback="Loading Lazy Component..."
         />
-      )}
+      {/* )} */}
     </>
   );
 }

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import '../public/lazy.css';
+// import '../public/lazy.css';
 
 function LazyComponent() {
 
