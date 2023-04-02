@@ -50,13 +50,13 @@ export const getPreConnectLayout = (content, styles) => {
     </style>
     <link rel="preconnect" href="https://www.wikipedia.org/">
     <script src="https://andydavies.github.io/test-rel-preconnect/tests/js/large-script.js"></script>
-    <script>
-   let img =  document.createElement('img');
-   img.src = 'https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2@2x.png'
-   document.body.appendChild(img)
-    </script>
   </head>
   <body>
+  <script>
+  let img =  document.createElement('img');
+  img.src = 'https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2@2x.png'
+  document.body.appendChild(img)
+   </script>
   </body>
 </html>
 `
