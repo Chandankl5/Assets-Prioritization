@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <a href="/next-page">
-        <img src="https://www.practostatic.com/consumer-home/practo-care/1631634827/banner-img.png" />
+        {/* <img src="https://www.practostatic.com/consumer-home/practo-care/1631634827/banner-img.png" /> */}
       </a>
       <h3 className="header">Experts in end to end surgical care</h3>
       <p>
@@ -42,7 +42,7 @@ function App() {
       <p>Avoid severe pain</p>
       <p>Avoid severe pain</p>
 
-      <VisibilitySensor
+      {/* <VisibilitySensor
         onChange={(visible) => {
           if (visible) {
             console.log("-----------Visible", visible);
@@ -51,7 +51,7 @@ function App() {
         }}
       >
         <img src="https://www.practo.com/sapphire-assets/images/practo_care/practo_care_banner_with_celebrity.dc1aadfd844b.png" />
-      </VisibilitySensor>
+      </VisibilitySensor> */}
 
       {visible && (
         <Dynamic
