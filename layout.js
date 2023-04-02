@@ -48,12 +48,11 @@ export const getPreConnectLayout = (content, styles) => {
     <style>
       ${styles}
     </style>
-    ${preConnectLinkTag}
+    <link rel="preconnect" href="https://www.wikipedia.org/">
     <script src="https://andydavies.github.io/test-rel-preconnect/tests/js/large-script.js"></script>
-    <link rel="stylesheet" href="/assets/lazy.css" type="text/css" />
   </head>
   <body>
-    <div id='root'>${content}</div>
+    <img src="https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2@2x.png">
   </body>
 </html>
 `
