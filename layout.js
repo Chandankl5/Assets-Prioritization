@@ -113,8 +113,7 @@ export const getDnsPrefetchFalseLayout = (content, styles) => {
     <style>
       ${styles}
     </style>
-    <link rel="stylesheet" href="/assets/lazy.css" type="text/css" onload="this.rel=stylesheet" />
-    <script src='/assets/main.js' defer></script>
+    <link rel="stylesheet" href="/assets/lazy.css" type="text/css" />
   </head>
   <body>
     <div id='root'>${content}</div>
@@ -129,9 +128,7 @@ export const getPreConnectFalseLayout = (content, styles) => {
     <style>
       ${styles}
     </style>
-    <link rel="stylesheet" href="/assets/lazy.css" type="text/css" onload="this.rel=stylesheet" />
-    <script src='https://www-latest.practo.com/consumer-home/assets/vendor.bundle.3dca5b4fa118.js'></script>
-    <script src='/assets/main.js' defer></script>
+    <link rel="stylesheet" href="/assets/lazy.css" type="text/css" />
   </head>
   <body>
     <div id='root'>${content}</div>
